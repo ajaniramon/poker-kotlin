@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.rmartinez.poker.MatchEvaluatorTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-10-04T22:04:41" hostname="Mac-mini-de-Ramon.local" time="0.189">
+  <properties/>
+  <testcase name="pair()" classname="dev.rmartinez.poker.MatchEvaluatorTests" time="0.189"/>
+  <system-out><![CDATA[[CLUBS, CLUBS, SPADES, CLUBS, DIAMONDS]
+[SPADES, CLUBS, SPADES, DIAMONDS, SPADES]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
