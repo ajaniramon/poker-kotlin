@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.5.10"
+    kotlin("jvm") version "1.8.10"
     application
 }
 
@@ -25,6 +25,10 @@ tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = "11"
 }
 
+kotlin {
+    jvmToolchain(11)
+}
+
 application {
-    mainClass.set("MainKt")
+    mainClass.set("dev.rmartinez.poker.MainKt")
 }

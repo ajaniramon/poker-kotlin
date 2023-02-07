@@ -6,9 +6,7 @@ interface MatchUntier {
 
 class MatchUntierImpl : MatchUntier {
     override fun untie(firstHandEvaluation: HandEvaluation, secondHandEvaluation: HandEvaluation): MatchResult {
-        val tiedCombination = firstHandEvaluation.combination
-
-        return when (tiedCombination) {
+        return when (firstHandEvaluation.combination) {
             PokerCombination.ROYAL_FLUSH, PokerCombination.STRAIGHT_FLUSH -> MatchResult(
                 Winners.DRAW,
                 firstHandEvaluation,
